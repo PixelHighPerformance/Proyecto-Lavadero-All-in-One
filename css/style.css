@@ -1,0 +1,779 @@
+:root {
+    --primary-color: #458ed7;
+    --secondary-color: #f3ed45;
+    --background-color: #ecf0f1;
+    --text-color: #000000;
+    --black: #000000;
+    --gray: #888;
+    --border-radius: 12px;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    background: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+    background-color: var(--primary-color);
+}
+
+h1{
+    text-align: left;
+    margin-left: -30px;
+    margin-right: 30px;
+    display: flex;
+    color: var(--text-color)
+    
+}
+
+select {
+    width: 100%;
+    max-width: 300px;
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--primary-color);
+    border-radius: var(--border-radius);
+    background: var(--background-color);
+    color: var(--primary-color);
+    font-size: 1rem;
+    transition: background 0.3s ease, border-color 0.3s ease;
+}
+
+select:hover {
+    background: var(--secondary-color);
+    border-color: var(--secondary-color);
+    color: var(--black);
+}
+
+select:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 5px var(--primary-color);
+}
+
+/* Alinea el logo a la izquierda */
+.nav-logo {
+    width: 40px;
+    height: 40px;
+    margin-right: 80px; /* Esto empuja el logo a la izquierda */
+}
+
+/* Estilo para centrar el contenido del nav */
+nav {
+    display: flex;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+
+}
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: flex;
+    align-items: center;
+}
+
+nav ul li a {
+    color: var(--black);
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: var(--border-radius);
+    transition: background 0.3s ease;
+}
+
+nav ul li a:hover {
+    background: var(--secondary-color);
+}
+
+
+nav ul li a svg {
+    margin-right: 0.5rem;
+}
+
+
+main {
+    padding: 2rem;
+}
+
+.info {
+    text-align: center;
+    padding: 2rem 0;
+    background: var(--primary-color);
+    color: var(--black);
+    border-radius: var(--border-radius);
+    margin-bottom: 2rem;
+}
+
+#map {
+    width: 100%;
+    height: 400px;
+    background: var(--gray);
+}
+
+/* Reutilización de la clase form-container para formularios */
+.form-container {
+    background: var(--background-color);
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 0 auto 2rem;
+}
+
+.form-container h2 {
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.form-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container label {
+    font-weight: bold;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.form-container input,
+.form-container select {
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid var(--gray);
+    border-radius: var(--border-radius);
+    font-size: 1rem;
+}
+
+.form-container button {
+    background: var(--secondary-color);
+    color: var(--white);
+    padding: 0.75rem;
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s ease;
+}
+
+.form-container button:hover {
+    background: var(--primary-color);
+}
+
+/* Navegación dentro de la sección lavadero */
+.lavadero nav ul {
+    text-align: center;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.lavadero nav ul li a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: var(--border-radius);
+    transition: background 0.3s ease;
+}
+
+.lavadero nav ul li a:hover {
+    background: var(--secondary-color);
+    color: var(--white);
+}
+
+
+
+main {
+    padding: 2rem;
+}
+
+.lavadero h1 {
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+}
+
+.taller h1 {
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+}
+
+.parking {
+    padding: 2rem;
+}
+
+.parking h1 {
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+}
+
+/* Formulario de Reserva */
+#form-container {
+    background: var(--background-color);
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 0 auto 2rem;
+}
+
+#form-container h2 {
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+#form-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+#form-container label {
+    font-weight: bold;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+#form-container input {
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid var(--gray);
+    border-radius: var(--border-radius);
+    font-size: 1rem;
+}
+
+#form-container button {
+    background: var(--secondary-color);
+    color: var(--white);
+    padding: 0.75rem;
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s ease;
+}
+
+#form-container button:hover {
+    background: var(--primary-color);
+}
+
+#login {
+    background: var(--background-color);
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px; /* Ajusta el ancho según sea necesario */
+    margin: 0 auto 2rem;
+    text-align: center; /* Centra el texto y los botones */
+}
+
+#login h2 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+#login p {
+    margin-bottom: 1.5rem;
+    color: var(--gray);
+}
+
+#login label {
+    font-weight: bold;
+    color: var(--primary-color);
+    display: block;
+    margin-bottom: 0.5rem;
+    text-align: left; /* Alinear a la izquierda */
+}
+
+#login input {
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid var(--gray);
+    border-radius: var(--border-radius);
+    font-size: 1rem;
+    width: 100%; /* Asegura que el input ocupe el 100% del ancho */
+}
+
+#login button {
+    background: var(--secondary-color);
+    color: var(--white);
+    padding: 0.75rem;
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s ease;
+    width: 100%; /* Botón de ancho completo */
+}
+
+#login button:hover {
+    background: var(--primary-color);
+}
+
+#login a {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+#micuenta {
+    background: var(--background-color);
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 0 auto 2rem;
+    text-align: center; /* Centra el texto y los botones */
+}
+
+#micuenta h2 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+#micuenta p {
+    margin-bottom: 1.5rem;
+    color: var(--gray);
+}
+
+#micuenta button {
+    background: var(--secondary-color);
+    color: var(--black);
+    padding: 0.75rem 1.5rem; /* Aumenta el padding para botones más grandes */
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s ease;
+    margin: 0.5rem; /* Espacio entre los botones */
+}
+
+#micuenta button:hover {
+    background: var(--primary-color);
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px auto;
+}
+
+caption {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+td {
+    width: 60px;
+    height: 60px;
+    border: 1px solid #ccc;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #000;
+    transition: background-color 0.3s ease;
+}
+
+td.libre {
+    background-color: green;
+}
+
+td.ocupada {
+    background-color: red;
+}
+
+td:hover {
+    border: 2px solid var(--secondary-color);
+    box-shadow: 0 0 10px var(--secondary-color);
+    opacity: 0.9;
+}
+
+
+/* Estilos para la sección de neumáticos */
+.neumaticos {
+    text-align: center;
+    padding: 2rem;
+    background-color: var(--background-color);
+    color: var(--primary-color);
+}
+
+.neumaticos h1 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.galeria-neumaticos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.neumatico {
+    background: var(--card-background-color);
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    padding: 1rem;
+    max-width: 200px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.neumatico img {
+    max-width: 100%;
+    border-radius: var(--border-radius);
+}
+
+.neumatico .info {
+    margin-top: 1rem;
+}
+
+.neumatico p {
+    margin: 0.5rem 0;
+}
+
+.neumatico:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: var(--primary-color);
+    color: var(--black);
+    border-top: 1px solid var(--secondary-color);
+}
+
+.social-media a {
+    margin: 0 0.5rem;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.social-media a img {
+    width: 40px;
+    height: 40px;
+}
+
+.social-media a:hover {
+    transform: scale(1.2);
+}
+
+.dashboard-container {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+    padding: 2rem;
+}
+
+.dashboard-container h1 {
+    color: var(--primary-color);
+}
+
+.dashboard-container table {
+    width: 50%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+.dashboard-container table, 
+.dashboard-container th, 
+.dashboard-container td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.dashboard-container th {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.dashboard-container td {
+    text-align: center;
+}
+
+.dashboard-container a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: var(--secondary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.dashboard-container a:hover {
+    background-color: var(--primary-color);
+}
+
+
+/* Estilo para las plazas de parking rectangulares */
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+caption {
+    font-size: 70px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    color: var(--primary-color);
+}
+
+td {
+    width: 40px; 
+    height: 400px; 
+    border: 1px solid #ccc;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    transition: background-color 0.3s;
+}
+
+/* Plazas libres */
+.libre {
+    background-color: green;
+}
+
+/* Plazas ocupadas */
+.ocupada {
+    background-color: red;
+}
+
+/* Hover en las celdas */
+td:hover {
+    opacity: 0.8;
+}
+
+
+#user-icon {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+}
+
+/* Estilos de la tarjeta general para opciones de rol y reservas */
+.dashboard-card, .reserva-card {
+    background-color: var(--background-color);
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    margin: 1rem;
+    max-width: 300px;
+    text-align: center;
+    display: inline-block;
+}
+
+/* Estilos específicos para los títulos dentro de las tarjetas */
+.dashboard-card h2, .reserva-card h3 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+/* Estilos para listas de opciones en tarjetas de rol */
+.dashboard-card ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.dashboard-card ul li {
+    margin: 0.5rem 0;
+}
+
+.dashboard-card ul li a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.dashboard-card ul li a:hover {
+    color: var(--secondary-color);
+}
+
+/* Estilos para los detalles de reservas dentro de las tarjetas */
+.reserva-card p {
+    margin: 0.5rem 0;
+    color: var(--text-color);
+}
+
+/* Formularios de actualización en tarjetas de reservas */
+.reserva-card form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.reserva-card label {
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.reserva-card input[type="time"],
+.reserva-card select,
+.reserva-card button {
+    padding: 0.5rem;
+    border: 1px solid var(--gray);
+    border-radius: var(--border-radius);
+    font-size: 1rem;
+    width: 100%;
+}
+
+.reserva-card button {
+    background-color: var(--secondary-color);
+    color: var(--white);
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.reserva-card button:hover {
+    background-color: var(--primary-color);
+}
+
+/* Grid para organizar las tarjetas */
+.dashboard-grid, .reservas-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+/* Móviles */
+@media (max-width: 576px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    nav ul li a {
+        font-size: 14px;
+    }
+
+    .info {
+        padding: 1rem;
+        font-size: 0.9rem;
+    }
+
+    .map-container {
+        padding-top: 70%; /* Relación de aspecto más vertical */
+    }
+
+    footer {
+        font-size: 0.8rem;
+    }
+
+    .social-media a img {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+/* Tabletas */
+@media (max-width: 768px) {
+    body {
+        font-size: 15px;
+    }
+
+    header {
+        padding: 1rem 2rem;
+    }
+
+    nav ul {
+        justify-content: center;
+    }
+
+    .info {
+        padding: 1.5rem;
+    }
+
+    .map-container {
+        padding-top: 56.25%; /* Relación de aspecto estándar (16:9) */
+    }
+    footer {
+        font-size: 0.9rem;
+    }
+
+    .social-media a img {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+/* Escritorio */
+@media (min-width: 1024px) {
+    header {
+        padding: 2rem 4rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    nav ul {
+        gap: 2rem;
+    }
+
+    .info {
+        padding: 2rem;
+        font-size: 1.1rem;
+    }
+
+    .map-container {
+        padding-top: 50%; /* Relación de aspecto más horizontal */
+    }
+
+    footer {
+        font-size: 1rem;
+    }
+
+    .social-media a img {
+        width: 40px;
+        height: 40px;
+    }
+}
